@@ -2,7 +2,6 @@
 
 using namespace std;
 
-void DisplayArray(int*, int);
 void CountingSigns(int*, int, int&, int&, int&);
 void Order(int, int, int, int);
 void IsEqual(int, int);
@@ -37,17 +36,10 @@ int main()
 	Order(lessthan, greaterthan, equal, dim);
 	
 	system("pause");
+	
+	return 0;
 }
 
-
-
-void DisplayArray(int* array, int dim)
-{
-	for (int i = 0; i < dim; i++)
-	{
-		cout << "[" << i + 1 << "] = " << array[i] << endl;
-	}
-}
 
 void CountingSigns(int*array, int dim, int& lessthan, int& greaterthan, int& equal)
 {
