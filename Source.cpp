@@ -84,11 +84,11 @@ void Order(int lessthan, int greaterthan, int equal, int dim)
 	{
 		cout << "Strictly decreasing\n" << endl;
 	}
-	else if (lessthan + equal == dim - 1 && equal != dim - 1 && lessthan != dim - 1)
+	else if (greaterthan == 0)
 	{
 		cout << "Increasing instrictly\n" << endl;
 	}
-	else if (greaterthan + equal == dim - 1 && equal != dim - 1 && greaterthan != dim - 1)
+	else if (lessthan == 0)
 	{
 		cout << "Decreasing instrictly\n" << endl;
 	}
